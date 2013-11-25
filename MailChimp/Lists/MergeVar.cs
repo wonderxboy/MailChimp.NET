@@ -89,5 +89,30 @@ namespace MailChimp.Lists
             set;
         }
 
+        #region custom mergevars
+        ///Mergevars defined in list
+        
+        [DataMember(Name = "USERNAME")]
+        public string USERNAME
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Name = "SEARCHQ1")]
+        public string SEARCHQ1
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Name = "SEARCHQ2")]
+        public string SEARCHQ2
+        {
+            get;
+            set;
+        }
+
+        #endregion
     }
 }
